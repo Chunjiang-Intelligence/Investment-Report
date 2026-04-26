@@ -5,9 +5,17 @@
 ## 结构
 
 - `static/`: 存放研报 PDF 文件
-- `index.md`: 主页，列出所有研报
+- `index.html`: 根页面，根据浏览器语言自动重定向到中文或英文版本
+- `zh/index.md`: 中文主页，列出所有研报
+- `en/index.md`: 英文主页，列出所有研报
 - `_config.yml`: Jekyll 配置
 - `.github/workflows/deploy.yml`: GitHub Actions 工作流，用于自动部署
+
+## 国际化 (i18n)
+
+网站支持中文和英文：
+- 根据浏览器语言自动重定向：中文浏览器 -> `/zh/`，其他 -> `/en/`
+- 每个页面底部有手动切换语言的链接
 
 ## 使用方法
 
