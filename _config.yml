@@ -1,0 +1,34 @@
+title: "春江量化研报"
+description: "春江量化的官方研报网站"
+url: "https://Chunjiang-Intelligence.github.io"
+baseurl: "/Investment-Report"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Languages
+languages: ["zh", "en"]
+default_lang: "zh"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+
+# Include static files
+include:
+  - static/
+
+# Collections
+collections:
+  reports:
+    output: false
